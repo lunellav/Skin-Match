@@ -1,0 +1,17 @@
+User_id,User_name,Password,Skin_type
+-1,External_user,password,normal
+1,Alice,pass1,oily
+2,Bob,pass2,dry
+3,Charlie,pass3,combination
+4,David,pass4,sensitive
+5,Emma,pass5,normal
+6,Frank,pass6,oily
+7,Grace,pass7,dry
+8,henry,pass8,combination
+9,Ivy,pass9,sensitive
+10,Jack,pass10,normal
+11,Karen,pass11,oily
+12,Leo,pass12,dry
+13,Mia,pass13,combination
+14,Nick,pass14,sensitive
+15,Olivia,pass15,normal
