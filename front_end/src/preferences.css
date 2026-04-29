@@ -1,0 +1,138 @@
+.preferences-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffc8c8, #e6f4ff);
+    padding: 20px;
+}
+
+.preferences-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 50px 60px; 
+    background: radial-gradient(
+        circle at center,
+        rgba(255,255,255,0.2) 20%,
+        rgba(255,255,255,0.9) 80%
+    );
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 42px;
+    box-shadow: 0 8px 24px rgba(46, 79, 84, 0.08);
+}
+
+.preferences-title {
+    text-align: center;
+    font-family: "Georgia", serif;
+    margin-bottom: 24px;
+    font-size: 26px;
+    color: #8c3f63;
+}
+
+.preferences-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.preferences-label {
+    font-size: 14px;
+    font-family: "Georgia", serif;
+    font-weight: 600;
+    color: #8c3f63;
+}
+
+.preferences-select {
+    color: #8c3f63;
+    width: 100%;
+    padding: 12px 14px;
+
+    border-radius: 12px;
+    border: 2px solid transparent;
+
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #bef6ff,#f472b6) border-box;
+
+    font-size: 16px;
+    appearance: none;
+}
+
+.preferences-select:invalid {
+    color: #8c3f63;
+}
+
+
+.preferences-select:focus {
+    outline: none;
+    border-color: #ffa6c9;
+    box-shadow: 0 0 0 3px rgba(192,132,252,0.2);
+}
+
+.preferences-button {
+    margin-top: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: linear-gradient(to right, #ff7eb9, #ff65a3);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    background: linear-gradient(to right, #bef6ff, #ff96c7);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.preferences-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.preferences-goals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.goal-option {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-family: "Georgia", serif;
+
+    border: 2px solid transparent;
+
+    background:
+        linear-gradient(rgb(255,249,251), rgb(255,249,251)) padding-box,
+        linear-gradient(to right, #bef6ff, #f472b6) border-box;
+
+    color: #8c3f63;
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.goal-option:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.goal-option.selected {
+    background: linear-gradient(to right, #bef6ff, #ff96c7);
+    color: white;
+    border: none;
+}
+
+.goal-option.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.preferences-selected-count {
+    font-size: 13px;
+    color: #8c3f63;
+    margin-top: 4px;
+    font-family: "Georgia", serif;
+}
