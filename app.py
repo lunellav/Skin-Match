@@ -8,7 +8,7 @@ app.secret_key = "123456"
 
 connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='1234566',
+                             password='password',
                              database='skin_match_db',
                              cursorclass=pymysql.cursors.DictCursor,
                              charset='utf8mb4')
